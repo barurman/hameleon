@@ -1,0 +1,233 @@
+$bgimg: url(../i/main-section-bg.png);
+$brand-dark: #252623;
+
+/* font-family: "ArialNarrowRegular"; */
+
+@font-face {
+    font-family: "ArialNarrowRegular";
+    src: url("../fonts/ArialNarrowRegular/ArialNarrowRegular.eot");
+    src: url("../fonts/ArialNarrowRegular/ArialNarrowRegular.eot?#iefix")format("embedded-opentype"), url("../fonts/ArialNarrowRegular/ArialNarrowRegular.woff") format("woff"), url("../fonts/ArialNarrowRegular/ArialNarrowRegular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+
+/* font-family: "ArialNarrowBold"; */
+
+@font-face {
+    font-family: "ArialNarrowBold";
+    src: url("../fonts/ArialNarrowBold/ArialNarrowBold.eot");
+    src: url("../fonts/ArialNarrowBold/ArialNarrowBold.eot?#iefix")format("embedded-opentype"), url("../fonts/ArialNarrowBold/ArialNarrowBold.woff") format("woff"), url("../fonts/ArialNarrowBold/ArialNarrowBold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+
+/* font-family: "ArialNarrowItalic"; */
+
+@font-face {
+    font-family: "ArialNarrowItalic";
+    src: url("../fonts/ArialNarrowItalic/ArialNarrowItalic.eot");
+    src: url("../fonts/ArialNarrowItalic/ArialNarrowItalic.eot?#iefix")format("embedded-opentype"), url("../fonts/ArialNarrowItalic/ArialNarrowItalic.woff") format("woff"), url("../fonts/ArialNarrowItalic/ArialNarrowItalic.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+
+/* font-family: "ArialNarrowBoldItalic"; */
+
+@font-face {
+    font-family: "ArialNarrowBoldItalic";
+    src: url("../fonts/ArialNarrowBoldItalic/ArialNarrowBoldItalic.eot");
+    src: url("../fonts/ArialNarrowBoldItalic/ArialNarrowBoldItalic.eot?#iefix")format("embedded-opentype"), url("../fonts/ArialNarrowBoldItalic/ArialNarrowBoldItalic.woff") format("woff"), url("../fonts/ArialNarrowBoldItalic/ArialNarrowBoldItalic.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+body {
+    font-family: "ArialNarrowRegular";
+    padding: 0;
+    margin: 0;
+    background-image: url(../i/main-screen.png);
+    background-position: top center;
+    background-size: 1920px;
+    position: relative;
+    overflow: hidden;
+    -webkit-font-smoothing: subpixel-antialiased;
+    transition: 1s ease-in-out;
+}
+
+.block {
+    display: block !important;
+}
+
+section.main-section {
+    width: 100vw;
+    background-image: $bgimg;
+    background-position: top center;
+    height: 100vh;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+header {
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.logo {
+    padding-top: 3vw;
+    padding-bottom: 2vw;
+    max-width: 480px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 12px;
+    color: white;
+    line-height: 1.1;
+    & img {
+        max-width: 130px;
+    }
+    & span {
+        font-size: 70px;
+        transform: scaleY(0.69);
+        font-weight: 700;
+    }
+    & h1 {
+        text-align: center;
+        transform: scaleY(0.62);
+        -webkit-transform: scaleY(0.62);
+        margin-top: 6px;
+        padding-left: 45px;
+        font-weight: 400;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+        & p {
+            transform: scaleY(1.5);
+            -webkit-transform: scaleY(1.5);
+            font-size: 19px;
+        }
+    }
+}
+
+.bottom-line {
+    background-color: $brand-dark;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 1vw 0;
+}
+
+footer {
+    color: white;
+}
+
+.bottom-line-li {
+    display: block;
+    position: relative;
+    float: left;
+    height: 100%;
+    font-size: 24px;
+    padding: 0 40px;
+    text-transform: uppercase;
+    transform: scaleY(0.8);
+    -webkit-transform: scaleY(0.8);
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.dop-lvl-1 {
+    display: none;
+    width: 50vw;
+    margin: 0 auto;
+    position: relative;
+    bottom: 0;
+    box-sizing: border-box;
+    height: 50vh;
+    padding-bottom: 58vh;
+    background-color: $brand-dark;
+    & .exit_link {
+        padding: 10px;
+        cursor: pointer;
+        position: absolute;
+        right: 20px;
+        top: 20px;
+    }
+}
+
+.journal {
+    float: right;
+}
+
+.dop-link {
+    display: bock;
+    margin: 0 auto;
+    position: absolute;
+    left: 45%;
+    letter-spacing: 0px;
+    font-weight: 400;
+    font-size: 20px;
+    text-align: center;
+    z-index: 1;
+    &:before {
+        content: '';
+        display: block;
+        width: 100px;
+        height: 50px;
+        background-color: $brand-dark;
+        position: absolute;
+        top: -52px;
+        left: 25%;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB8AAAAPCAYAAAAceBSiAAABhklEQVQ4jbXUv0uXURTH8dfzpSiCoAYLFw0Hh0hccnIIaWkpMIJEyKkfEDgomNgfYFRQgyCYTboUiIKBtQg2OOlU0dAQlIOog4IgiuJteB7hS9zn6etXO+P9nM9533vuuTcJIagirqMDtVjGO8wetkhSBbwd3ThRtraHIUz9L/hpPMSdgpwJvMH2ccIvoAetFeTO4zVWjwN+GQOorwB8EL/wDN+Lkkr/KNKWFYmBtzEn3uL6zNdWVDzv5CXcQxdORvR1vMJnXEMvzkfydjGGcexXAj8rneYbORv+iUH8KFtrxFM05Hg+SV/DZhG8Dn1ozikyLz3xWkSrkXYgbyi/4AV+x+AteIKLOeb3eIudHB1O4T7u5ugr2QYWyuHteIQzEcMWhjFdAP07buFxQb0RTCUhhE7p5xGb/GW8xOIhwAdxVXqFtRFtH6NJCGEa5yIJX/Fc2R1VEXXoR1NE2yhhKSLMZKajgGX+fnyMaEtJCOESHuAKNvABkyLv8ghRwm3clHb5G0b/ACZNb3vLvp6aAAAAAElFTkSuQmCC');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 32px;
+        cursor: pointer;
+        transition: 0.2s ease-in;
+        z-index: -1;
+    }
+    &:hover:before {
+        content: "";
+        top: -28px;
+        opacity: 0 !important;
+        animation-delay: 0.2s;
+        animation: dis 0.2s ease-in-out
+    }
+    &:hover {
+        background-color: $brand-dark;
+    }
+}
+
+@-webkit-keyframes dis {
+    from {
+        opacity: 1;
+    }
+    80% {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+@keyframes dis {
+    from {
+        opacity: 1;
+    }
+    80% {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    &:hover {
+        text-decoration: none;
+        color: white;
+    }
+}
